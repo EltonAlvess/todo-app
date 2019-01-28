@@ -2,20 +2,22 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "src/loader.js",
+  "main": "backend/src/loader.js",
   "scripts": {
     "dev": "nodemon",
-    "production": "pm2 start src/loader.js --name todo-app"
+    "production": "pm2 start backend/src/loader.js --name todo-app"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^1.11.0",
-    "pm2": "^2.1.5",
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "mongoose": "4.7.0",
-    "node-restful": "^0.2.5"
+    "node-restful": "0.2.5",
+    "pm2": "2.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.9"
   }
 }
