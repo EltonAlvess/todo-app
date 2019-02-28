@@ -9,11 +9,13 @@ export default class Grid extends Component{
         if(cols[1]) Class += `col-sm-${cols[1]} `
         if(cols[2]) Class += `col-md-${cols[2]} `
         if(cols[3]) Class += `col-lg-${cols[3]} `
+
         return Class
     }
 
     render(){
         const gridClass = this.toCssClass(this.props.cols || '6')
+
         return(
             <div className={gridClass}>
                 {this.props.children}

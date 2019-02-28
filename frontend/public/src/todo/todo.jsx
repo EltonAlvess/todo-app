@@ -5,6 +5,7 @@ import TodoList from './todoList'
 
 export default class Todo extends Component{
 
+
     constructor(props){
         super(props)
         this.state = {description: 'awe', list: [] }
@@ -20,13 +21,16 @@ export default class Todo extends Component{
         console.log(this)
     }
 
+
     render(){
         return(
             <div>
                 <PageHeader name='Tasks' small='Register'></PageHeader>
+
                 <TodoForm 
                     handleChange={this.handleChange}
                     handleAdd={this.handleAdd}/>
+
                 <TodoList />
             </div>
         )
